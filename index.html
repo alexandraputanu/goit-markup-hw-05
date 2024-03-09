@@ -22,7 +22,7 @@
             <a href="index.html" class="logo">STUDIO</a>
             <nav class="nav-bar">
                 <ul class="nav-list">
-                    <li><a href="index.html">Studio</a></li>
+                    <li><a href="index.html" class="active">Studio</a></li>
                     <li><a href="portofolio.html">Portofolio</a> </li>
                     <li><a href="contacts.html">Contacts</a> </li>
                 </ul>
@@ -37,10 +37,16 @@
     <main>
         <!-- Hero section -->
         <section class="hero-section">
-            <div class="container">
+
+            <div class="position">
                 <h1 class="hero-title">Effective Solutions<br>for Your Business
                 </h1>
-                <button type="button" class="order-service">Order Service</button>
+                <button type="button" class="order-service " data-modal-open>Order Service</button>
+            </div>
+            <div class="modal is-hidden" data-modal>
+                <div class="modal-content">
+                    <div class="button close-btn" data-modal-close>&times;</div>
+                </div>
             </div>
         </section>
         <!-- Section strenghts -->
@@ -109,10 +115,10 @@
             <div class="container">
                 <h2 class="what-we-do">What Are We Doing</h2>
                 <ul class="what-we-do-pics">
-                    <li><img src="images/img 1.jpg" alt="a pic of a computer monitor" width="360"></li>
-                    <li><img src="images/img 2.jpg" alt="a pic of a phone with multiple interaces" width="360">
+                    <li><img src="images/first_pic.png" alt="a pic of a computer monitor" width="360"></li>
+                    <li><img src="images/second_pic.png" alt="a pic of a phone with multiple interaces" width="360">
                     </li>
-                    <li><img src="images/img 3.jpg"
+                    <li><img src="images/third_pic.png"
                             alt="a pic of someone holding a phone searching for inspiring places" width="360">
                     </li>
                 </ul>
@@ -124,7 +130,7 @@
                 <h2 class="our-team">Our Team</h2>
                 <ul class="our-team-pics">
                     <li>
-                        <img src="images/Team Card 1.jpg" alt="An image of the product designer" width="264">
+                        <img src="images/first_employee.jpg" alt="An image of the product designer" width="264">
                         <h4>Mark Guerrero</h4>
                         <p>Product Designer</p>
                         <div class="social-media">
@@ -157,7 +163,7 @@
 
                         </div>
                     <li>
-                        <img src="images/Team Card 2.jpg" alt="An image of the frontend developer" width="264">
+                        <img src="images/second_employee.jpg" alt="An image of the frontend developer" width="264">
                         <h4>Tom Ford</h4>
                         <p>Frontend Developer</p>
                         <div class="social-media">
@@ -189,7 +195,7 @@
                             </a>
                         </div>
                     <li>
-                        <img src="images/Team Card 3.jpg" alt="An image of one of the marketing employees"
+                        <img src="images/third_employee.jpg" alt="An image of one of the marketing employees"
                             width="264">
                         <h4>Camila Garcia</h4>
                         <p>Marketing</p>
@@ -223,7 +229,7 @@
                         </div>
                     </li>
                     <li>
-                        <img src="images/Team Card 4.jpg" alt="An image of the ux designer" width="264">
+                        <img src="images/forth_employee.jpg" alt="An image of the ux designer" width="264">
                         <h4>Daniel Wilson</h4>
                         <p>UI Designer</p>
                         <div class="social-media">
@@ -336,6 +342,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
